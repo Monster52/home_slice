@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
   devise_for :users
-  get 'welcome/index'
+  resources :students
 
    root 'welcome#index'
    get '/pricing', to: 'welcome#pricing'
