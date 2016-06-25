@@ -78,5 +78,5 @@ Rails.application.configure do
   config.active_record.dump_schema_after_migration = false
 
   # Devise Mailer config
-  config.action_mailer.default_url_options = { host: 'homeslice.herokuapp.com', port: 3000 }
+  config.action_mailer.default_url_options = { host: 'home-slice.herokuapp.com', port: 3000 }
 end
