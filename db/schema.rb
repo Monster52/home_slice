@@ -11,7 +11,35 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160626001547) do
+ActiveRecord::Schema.define(version: 20160626015233) do
+
+  create_table "curriculums", force: :cascade do |t|
+    t.string   "reading"
+    t.string   "writing"
+    t.string   "science"
+    t.string   "history"
+    t.string   "foreign_lang"
+    t.string   "sports"
+    t.string   "music"
+    t.string   "visual_art"
+    t.string   "performing_art"
+    t.string   "religion"
+    t.string   "field_trip"
+    t.string   "trade_skill"
+    t.string   "heath"
+    t.string   "computer"
+    t.string   "community"
+    t.string   "home_eco"
+    t.string   "elective"
+    t.string   "misc"
+    t.integer  "student_id"
+    t.datetime "created_at",     null: false
+    t.datetime "updated_at",     null: false
+    t.string   "title"
+    t.string   "math"
+  end
+
+  add_index "curriculums", ["student_id"], name: "index_curriculums_on_student_id"
 
   create_table "students", force: :cascade do |t|
     t.string   "name"

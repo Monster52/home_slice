@@ -1,0 +1,4 @@
+<h1>Edit Curriculum</h1>
+<%= link_to "Delete", [@curriculum.student, @curriculum], class: 'btn btn-danger', method: :delete, data: {confirm: "Are you sure?"} %>
+
+<%= render partial: 'curriculums/form', locals: { student: @curriculum.student, curriculum: @curriculum } %>

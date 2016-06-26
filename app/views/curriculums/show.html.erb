@@ -1,0 +1,65 @@
+<h1><%= @curriculum.title %></h1>
+
+<%= link_to "Student", student_path(@curriculum.student), class: "btn btn-primary" %>
+<%= link_to "Edit", edit_student_curriculum_path, class: "btn btn-success" %>
+
+<div class="row">
+  <div class="col-md-12">
+    <h3>Reading/Literature</h3>
+    <h4><em><%= @curriculum.reading %></em></h4>
+
+    <h3>Writing/Language Arts</h3>
+    <h4><em><%= @curriculum.writing %></em></h4>
+
+    <h3>Mathematics</h3>
+    <h4><em><%= @curriculum.math %></em></h4>
+
+    <h3>Science/Lab</h3>
+    <h4><em><%= @curriculum.science %></em></h4>
+
+    <h3>History</h3>
+    <h4><em><%= @curriculum.history %></em></h4>
+
+    <h3>Foreign Language</h3>
+    <h4><em><%= @curriculum.foreign_lang %></em></h4>
+
+    <h3>Sports/Fitness/Phys. Ed.</h3>
+    <h4><em><%= @curriculum.sports %></em></h4>
+
+    <h3>Music</h3>
+    <h4><em><%= @curriculum.music %></em></h4>
+
+    <h3>Visual Arts</h3>
+    <h4><em><%= @curriculum.visual_art %></em></h4>
+
+    <h3>Performing Arts</h3>
+    <h4><em><%= @curriculum.performing_art %></em></h4>
+
+    <h3>Religion/Cultural Studies</h3>
+    <h4><em><%= @curriculum.religion %></em></h4>
+
+    <h3>Field Trips</h3>
+    <h4><em><%= @curriculum.field_trip %></em></h4>
+
+    <h3>Trade Skills/Shop</h3>
+    <h4><em><%= @curriculum.trade_skill %></em></h4>
+
+    <h3>Health/Hygiene/Nutrition</h3>
+    <h4><em><%= @curriculum.heath %></em></h4>
+
+    <h3>Computers/Tech./Business Skills</h3>
+    <h4><em><%= @curriculum.computer %></em></h4>
+
+    <h3>Community Service/Volunteerism</h3>
+    <h4><em><%= @curriculum.community %></em></h4>
+
+    <h3>Home Economics</h3>
+    <h4><em><%= @curriculum.home_eco %></em></h4>
+
+    <h3>Electives</h3>
+    <h4><em><%= @curriculum.elective %></em></h4>
+
+    <h3>Miscellaneous</h3>
+    <h4><em><%= @curriculum.misc %></em></h4>
+  </div>
+</div>
