@@ -1,0 +1,9 @@
+<div class="col-md-8">
+
+  <h1>Books</h1>
+  <%= link_to "New Book", new_book_path, class: 'btn btn-primary' %>
+    <% @books.each do |book| %>
+      <h3><%= link_to book.title, book %></h3>
+    <% end %>
+
+</div>

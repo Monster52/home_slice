@@ -6,6 +6,8 @@ Rails.application.routes.draw do
     resources :curriculums
   end
 
+  resources :books
+
    root 'welcome#index'
    get '/pricing', to: 'welcome#pricing'
 end
